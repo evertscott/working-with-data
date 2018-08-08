@@ -136,14 +136,14 @@ $('#loadData').click(function(e){
 });
 
 $('#pageUp').click(function(e){
+    $(this).disabled = true;
     window.page += 1;
-    console.log(window.page);
     renderMethod(".container", new DataManager().fetchRequest({url: 'https://jsonplaceholder.typicode.com/posts', methodType: 'GET', content: 'application/json'}));
 });
 
 $('#pageDown').click(function(e){
+    $(this).disabled = true;
     window.page -= 1;
-    console.log(window.page);
     renderMethod(".container", new DataManager().fetchRequest({url: 'https://jsonplaceholder.typicode.com/posts', methodType: 'GET', content: 'application/json'}));
 });
 

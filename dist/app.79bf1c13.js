@@ -29597,14 +29597,14 @@ $('#loadData').click(function (e) {
 });
 
 $('#pageUp').click(function (e) {
+    $(this).disabled = true;
     window.page += 1;
-    console.log(window.page);
     renderMethod(".container", new DataManager().fetchRequest({ url: 'https://jsonplaceholder.typicode.com/posts', methodType: 'GET', content: 'application/json' }));
 });
 
 $('#pageDown').click(function (e) {
+    $(this).disabled = true;
     window.page -= 1;
-    console.log(window.page);
     renderMethod(".container", new DataManager().fetchRequest({ url: 'https://jsonplaceholder.typicode.com/posts', methodType: 'GET', content: 'application/json' }));
 });
 },{"./styles.scss":"styles.scss","jquery":"node_modules/jquery/dist/jquery.js","jquery-ui-dist/jquery-ui.js":"node_modules/jquery-ui-dist/jquery-ui.js"}],"../../linuxbrew/.linuxbrew/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -29636,7 +29636,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '43975' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '40437' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
