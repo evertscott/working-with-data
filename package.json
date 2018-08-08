@@ -1,0 +1,23 @@
+{
+  "name": "working-with-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evertscott/working-with-data.git"
+  },
+  "author": "Evert Scott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evertscott/working-with-data/issues"
+  },
+  "homepage": "https://github.com/evertscott/working-with-data#readme"
+}
