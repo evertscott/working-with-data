@@ -1,0 +1,22 @@
+body {
+  background-color: darkcyan; }
+
+.card {
+  display: inline-block;
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+  padding-right: 30pt;
+  padding-left: 10pt;
+  max-width: 150pt;
+  border: 2px solid black;
+  background-color: white; }
+
+.value {
+  color: firebrick;
+  margin: 0;
+  padding: 10; }
+
+.identifier {
+  color: black;
+  margin: 0;
+  padding: 0; }
