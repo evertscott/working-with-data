@@ -147,5 +147,12 @@ $('#pageDown').click(function(e){
     renderMethod(".container", new DataManager().fetchRequest({url: 'https://jsonplaceholder.typicode.com/posts', methodType: 'GET', content: 'application/json'}));
 });
 
+function ProtoTypeInherit(){
 
+}
+
+ProtoTypeInherit.prototype = Object.create(DataManager.prototype)
+ProtoTypeInherit.prototype.constructor = ProtoTypeInherit;
+
+//new ProtoTypeInherit().objectHTML("container", {userId: 1, id: 1, title: "Test Title", body: "Hello There friends"});
 

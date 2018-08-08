@@ -29607,6 +29607,13 @@ $('#pageDown').click(function (e) {
     window.page -= 1;
     renderMethod(".container", new DataManager().fetchRequest({ url: 'https://jsonplaceholder.typicode.com/posts', methodType: 'GET', content: 'application/json' }));
 });
+
+function ProtoTypeInherit() {}
+
+ProtoTypeInherit.prototype = Object.create(DataManager.prototype);
+ProtoTypeInherit.prototype.constructor = ProtoTypeInherit;
+
+//new ProtoTypeInherit().objectHTML("container", {userId: 1, id: 1, title: "Test Title", body: "Hello There friends"});
 },{"./styles.scss":"styles.scss","jquery":"node_modules/jquery/dist/jquery.js","jquery-ui-dist/jquery-ui.js":"node_modules/jquery-ui-dist/jquery-ui.js"}],"../../linuxbrew/.linuxbrew/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -29636,7 +29643,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '40437' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '43455' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
